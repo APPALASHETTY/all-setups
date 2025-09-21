@@ -9,7 +9,7 @@ sudo adduser nexus
 sudo chown -R nexus:nexus /app/nexus
 sudo chown -R nexus:nexus /app/sonatype*
 sudo sed -i '27  run_as_user="nexus"' /app/nexus/bin/nexus
-sudo tee /etc/systemd/system/nexus.service > /dev/null << EOL
+sudo tee /etc/systemd/system/nexus.service > /dev/null 
 [Unit]
 Description=nexus service
 After=network.target
